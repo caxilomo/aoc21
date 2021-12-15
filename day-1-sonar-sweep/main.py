@@ -5,11 +5,11 @@ def part_1(values: [int]) -> int:
     previous = values[0]
     increments = 0
 
-    for measure in values:
-        if measure > previous:
+    for value in values:
+        if value > previous:
             increments += 1
 
-        previous = measure
+        previous = value
 
     return increments
 
